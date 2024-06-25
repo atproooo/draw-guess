@@ -1,0 +1,58 @@
+/* 重置默认浏览器样式 */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 基本页面样式 */
+body {
+    font-family: Arial, sans-serif; /* 设置页面字体 */
+    line-height: 1.6; /* 设置行高 */
+    background-color: #f0f0f0; /* 设置背景颜色 */
+    color: #333; /* 设置文本颜色 */
+    padding: 20px; /* 设置内边距 */
+}
+
+/* 标题样式 */
+h1 {
+    font-size: 2em; /* 设置标题字体大小 */
+    text-align: center; /* 居中对齐 */
+    margin-bottom: 20px; /* 底部边距 */
+}
+
+/* 按钮样式 */
+button {
+    display: block; /* 块级显示 */
+    width: 200px; /* 设置宽度 */
+    margin: 10px auto; /* 居中对齐 */
+    padding: 10px 20px; /* 设置内边距 */
+    font-size: 1em; /* 设置字体大小 */
+    background-color: #007bff; /* 设置背景颜色 */
+    color: #fff; /* 设置文本颜色 */
+    border: none; /* 移除边框 */
+    cursor: pointer; /* 设置光标为指针 */
+    border-radius: 4px; /* 设置边框圆角 */
+    transition: background-color 0.3s ease; /* 设置背景颜色过渡效果 */
+}
+
+button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+}
+
+/* 表单样式（可选） */
+input[type="text"], input[type="number"] {
+    width: 100%; /* 设置宽度 */
+    padding: 8px; /* 设置内边距 */
+    margin-bottom: 10px; /* 底部边距 */
+    box-sizing: border-box; /* 设置盒模型为边框盒 */
+    border: 1px solid #ccc; /* 设置边框 */
+    border-radius: 4px; /* 设置边框圆角 */
+}
+
+/* 页脚样式（可选） */
+footer {
+    text-align: center; /* 居中对齐 */
+    margin-top: 20px; /* 顶部边距 */
+    color: #888; /* 设置文本颜色 */
+    font-size: 0.8em; /* 设置字体大小 */
+}
