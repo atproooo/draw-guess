@@ -1,7 +1,6 @@
 {
   "name": "draw-guess",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -10,6 +9,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
-    "mysql2": "^2.3.0"
-  }
+    "mysql2": "^2.3.0",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {},
+  "description": ""
 }
