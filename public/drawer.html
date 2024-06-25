@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出题者页面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>出题者页面</h1>
+        <div class="canvas-container">
+            <canvas id="drawingCanvas"></canvas>
+        </div>
+        <div>
+            <label for="colorPicker">选择颜色：</label>
+            <input type="color" id="colorPicker" v-model="color">
+            <label for="brushSize">选择画笔粗细：</label>
+            <input type="range" id="brushSize" v-model="brushSize" min="1" max="10">
+        </div>
+        <div>
+            <h3>关键词：{{ keyword }}</h3>
+            <button @click="changeKeyword">更换关键词</button>
+        </div>
+        <div>
+            <h3>当前房间成员：</h3>
+            <ul>
+                <li v-for="member in members" :key="member">
+                    {{ member }}
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>信息窗口</h3>
+            <ul>
+                <li v-for="(message, index) in messages" :key="index">
+                    {{ message }}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="drawer.js"></script>
+</body>
+</html>

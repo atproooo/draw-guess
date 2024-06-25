@@ -56,3 +56,10 @@ footer {
     color: #888; /* 设置文本颜色 */
     font-size: 0.8em; /* 设置字体大小 */
 }
+/* 添加画布容器的边框样式 */
+.canvas-container {
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* 可以根据需要调整下方间距 */
+}
+
+/* 其他样式继续在这里添加 */
